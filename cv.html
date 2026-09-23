@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CV d'Anwar Askik — Cybersécurité et Intelligence Artificielle" />
+    <title>CV — Anwar Askik</title>
+    <style>
+      :root {
+        --ink: #172033;
+        --muted: #526078;
+        --line: #dce3ee;
+        --accent: #087f8c;
+        --paper: #fff;
+        --page: #eef2f7;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font: 14px/1.55 Arial, Helvetica, sans-serif;
+      }
+      .toolbar {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+      }
+      button, .back {
+        border: 0;
+        border-radius: 6px;
+        padding: 10px 16px;
+        background: var(--accent);
+        color: #fff;
+        cursor: pointer;
+        font: inherit;
+        text-decoration: none;
+      }
+      .back { background: #263247; }
+      .cv {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto 30px;
+        padding: 17mm 18mm;
+        background: var(--paper);
+        box-shadow: 0 4px 24px rgba(23, 32, 51, .12);
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding-bottom: 18px;
+        border-bottom: 3px solid var(--accent);
+      }
+      h1 { margin: 0; font-size: 34px; letter-spacing: .02em; }
+      .role { margin-top: 5px; color: var(--accent); font-size: 17px; font-weight: 700; }
+      .contact { text-align: right; color: var(--muted); font-size: 12px; }
+      .contact a { color: inherit; }
+      section { margin-top: 20px; }
+      h2 {
+        margin: 0 0 9px;
+        color: var(--accent);
+        font-size: 13px;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 5px;
+      }
+      p { margin: 0; }
+      .item { margin: 0 0 14px; }
+      .item:last-child { margin-bottom: 0; }
+      .item-head { display: flex; justify-content: space-between; gap: 15px; font-weight: 700; }
+      .date { color: var(--muted); white-space: nowrap; font-weight: 400; }
+      .sub { color: var(--muted); font-style: italic; }
+      ul { margin: 5px 0 0 18px; padding: 0; }
+      .columns { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+      .tags { display: flex; flex-wrap: wrap; gap: 7px; }
+      .tag { padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; color: var(--ink); }
+      .note { color: var(--muted); font-size: 11px; margin-top: 22px; }
+      @media (max-width: 800px) {
+        .toolbar { position: sticky; top: 0; z-index: 2; background: var(--page); }
+        .cv { width: 100%; min-height: 0; margin: 0; padding: 28px 22px; }
+        header, .columns { display: block; }
+        .contact { margin-top: 12px; text-align: left; }
+        .item-head { display: block; }
+        .date { display: block; }
+      }
+      @media print {
+        @page { size: A4; margin: 0; }
+        body { background: #fff; }
+        .toolbar { display: none; }
+        .cv { width: auto; min-height: auto; margin: 0; padding: 15mm 17mm; box-shadow: none; }
+        a { color: inherit; text-decoration: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar" aria-label="Actions du CV">
+      <button type="button" onclick="window.print()">Télécharger en PDF</button>
+      <a class="back" href="index.html">Retour au portfolio</a>
+    </div>
+
+    <main class="cv">
+      <header>
+        <div>
+          <h1>Anwar Askik</h1>
+          <div class="role">Étudiant en informatique · Cybersécurité &amp; IA</div>
+        </div>
+        <div class="contact">
+          <div>Maroc</div>
+          <div><a href="https://github.com/Anwar2464">github.com/Anwar2464</a></div>
+          <!-- Remplacez les lignes ci-dessous par vos coordonnées avant impression. -->
+          <div>✉ votre.email@example.com</div>
+          <div>☎ +212 XX XX XX XX</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Profil</h2>
+        <p>Étudiant en informatique à l’EMSI, passionné par la cybersécurité, l’intelligence artificielle et le développement de solutions numériques. Curieux, autonome et orienté projets, je souhaite mettre mes compétences techniques au service d’environnements innovants et sécurisés.</p>
+      </section>
+
+      <div class="columns">
+        <div>
+          <section>
+            <h2>Formation</h2>
+            <div class="item">
+              <div class="item-head"><span>EMSI — École Marocaine des Sciences de l’Ingénieur</span><span class="date">En cours</span></div>
+              <div class="sub">Cycle d’ingénierie informatique</div>
+              <p>Spécialisation : cybersécurité et intelligence artificielle.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Compétences</h2>
+            <div class="tags">
+              <span class="tag">Cybersécurité</span><span class="tag">Réseaux</span><span class="tag">Linux</span>
+              <span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML / CSS</span>
+              <span class="tag">Intelligence artificielle</span><span class="tag">Git / GitHub</span>
+            </div>
+          </section>
+
+          <section>
+            <h2>Langues</h2>
+            <p>Français · Anglais · Arabe</p>
+          </section>
+        </div>
+
+        <div>
+          <section>
+            <h2>Projets</h2>
+            <div class="item">
+              <div class="item-head"><span>Portfolio personnel</span></div>
+              <p>Conception d’un portfolio web responsive présentant un parcours en cybersécurité et intelligence artificielle, avec animations CSS et interactions JavaScript.</p>
+              <div class="sub">HTML · CSS · JavaScript</div>
+            </div>
+            <div class="item">
+              <div class="item-head"><span>Projets cybersécurité &amp; IA</span></div>
+              <p>Veille technologique et réalisation de projets pratiques autour de la sécurité informatique, de l’automatisation et des systèmes intelligents.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Atouts</h2>
+            <ul>
+              <li>Esprit d’analyse et résolution de problèmes</li>
+              <li>Apprentissage rapide et autonomie</li>
+              <li>Travail en équipe et communication</li>
+              <li>Intérêt pour la veille technologique</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <p class="note">Conseil : cliquez sur « Télécharger en PDF », puis choisissez « Enregistrer au format PDF » dans la boîte d’impression. Pensez à remplacer les coordonnées provisoires ci-dessus.</p>
+    </main>
+  </body>
+</html>
